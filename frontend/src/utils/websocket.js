@@ -1,6 +1,9 @@
 export class Socket {
     constructor(endpoint, events, onopen) {
-        this.socket = new WebSocket(`ws://localhost:8000/ws/${endpoint}`);
+        const protocol = window.location.protocol === 'https:' ? 'wss' : 'ws';
+        const host = window.location.host
+
+        this.socket = new WebSocket(`${protocol}://${host}/ws/${endpoint}`);
         this._connected = false;
 
         this.socket.onopen = () => {
