@@ -1,4 +1,4 @@
-FROM python3.8-nodejs15
+FROM nikolaik/python-nodejs:python3.8-nodejs15
 
 COPY ./ /app
 WORKDIR /app/frontend

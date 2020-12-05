@@ -3,4 +3,5 @@ services:
   web:
     build:
       context: .
-      ports: "10010:10010"
+    ports:
+      - "10010:10010"
