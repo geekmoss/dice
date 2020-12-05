@@ -109,7 +109,6 @@ export default class Game extends React.Component {
             return false;
 
         const player = this.state[`player${this.state.you_are}`]
-        console.log(player.state);
 
         return ({
             roll: () => (player.state === 1),

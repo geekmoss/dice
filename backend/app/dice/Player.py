@@ -159,6 +159,7 @@ class Player:
 
     def make_combo_by_indexes(self, indexes: list):
         dices = [d for d in self.dice if (d.index in indexes)]
+        dices.sort(key=lambda d: d.state)
         self.pick_combo(Combination(tuple(dices)))
 
     def __repr__(self):

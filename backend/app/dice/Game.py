@@ -51,7 +51,7 @@ class Game:
         pass
 
     def is_winner(self):
-        return self.on_turn.points >= self.points_to_win
+        return self.player1.points >= self.points_to_win or self.player2.points >= self.points_to_win
 
     def __repr__(self):
         return f"Player 1 on turn" if self.on_turn == self.player1 else f"Player 2 on turn"
