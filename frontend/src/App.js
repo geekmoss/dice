@@ -3,7 +3,7 @@ import Game from "./pages/Game";
 import Lobbies from "./pages/Lobbies";
 import UsernamePrompt from "./components/UsernamePrompt";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import 'antd/dist/antd.min.css';
+import 'antd/dist/antd.dark.min.css';
 
 function App() {
 
