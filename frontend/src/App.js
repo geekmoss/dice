@@ -2,7 +2,7 @@ import React from 'react';
 import Game from "./pages/Game";
 import Lobbies from "./pages/Lobbies";
 import UsernamePrompt from "./components/UsernamePrompt";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { HashRouter as Router, Route } from "react-router-dom";
 import 'antd/dist/antd.dark.min.css';
 
 function App() {
